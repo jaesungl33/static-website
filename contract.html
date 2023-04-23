@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us - Bookstore</title>
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <!-- section nav -->
+
+  <section class="top-nav">
+    <div class="logo" >
+        <a href="/index.html"><img src="image/logo1.png"></a>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="#aboutus">About Us</a></li>
+      <li><a href="/romance.html">Romance</a></li>
+      <li><a href="/scifiction.html">Science-Fiction</a></li>
+      <li class="social_icon"><i class="fa fa-search"></i></li>
+    </ul>
+  </section>
+
+  <!-- form section -->
+  <div class="main">
+    <div class="main_tag">
+        <div class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form action="#" method="POST">
+                    <label for="contact-purpose">Contact Purpose</label>
+                    <select id="contact-purpose" name="contact-purpose" required>
+                        <option value="">Select a contact purpose</option>
+                        <option value="sell-books">I want to sell books</option>
+                        <option value="buy-books">I want to buy books</option>
+                    </select>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label>Contact Preference</label>
+                    <div class="contact-preference">
+                        <label for="by-email"><input type="checkbox" id="by-email" name="contact-preference" value="email" required>By email</label>
+                        <label for="by-phone"><input type="checkbox" id="by-phone" name="contact-preference" value="phone" required>By phone</label>
+                    </div>
+
+                    <label>Receive Weekly Newsletter</label>
+                    <div class="newsletter">
+                        <label for="yes"><input type="radio" id="yes" name="newsletter" value="yes" checked>Yes</label>
+                        <label for="no"><input type="radio" id="no" name="newsletter" value="no">No</label>
+                    </div>
+
+                    <label for="extra-notes">Extra Notes</label>
+                    <textarea id="extra-notes" name="extra-notes"></textarea>
+
+                    <div class="form-buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>    
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <div class="footer__links">
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>About Us</h2>
+        </div>
+        <div class="footer__link--items">
+          <h2>Privacy Policy</h2>
+        </div>
+      </div>
+      <div class="footer__link--wrapper">
+        <div class="footer__link--items">
+          <h2>Terms</h2>
+        </div>
+        <div class="footer__link--items">
+            <h2><a href="/contract.html">Contact Us</a></h2>
+          </div>
+      </div>
+    </div>
+    <!-- social__media -->
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/" id="footer__logo">Book Store</a>
+        </div>
+        <p class="website__rights">	&#169; Book Store 2023. All rights reserved</p>
+        <div class="social__icons">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+
+</body>
+</html>
